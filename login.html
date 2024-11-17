@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="styleslogin.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Registro de Usuario</h2>
+        <form onsubmit="registerUser(); return false;">
+            <label for="nombres">Nombres:</label><br><br>
+            <input type="text" id="nombres" required><br><br>
+            <label for="apellidos">Apellidos:</label><br><br>
+            <input type="text" id="apellidos" required><br><br>
+            <label for="correo">Correo electrónico:</label><br><br>
+            <input type="email" id="correo" required><br><br>
+            <label for="contraseña">Contraseña:</label><br><br>
+            <input type="password" id="contraseña" required><br><br>
+            <label for="genero">Género:</label><br><br>
+            <select id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+            <button type="submit">Registrar</button><br><br>
+        </form>
+        <button onclick="logout()">Cerrar Sesión</button><br>
+    </div>
+</body>
+</html>
