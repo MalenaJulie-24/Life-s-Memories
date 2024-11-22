@@ -1,3 +1,4 @@
+/* Encabezado */
 header {
     display: flex;
     align-items: center;
@@ -7,56 +8,54 @@ header {
     justify-content: space-between;
 }
 
-#logo-link{
+#logo-link {
     display: flex;
     align-items: center;
     text-decoration: none; 
     color: white;
-    margin-right: 60px;
-}
-#logo {
-    height: 80px;
-    margin-right: 10px;
 }
 
-h1 {
-    margin: 0; 
-    font-size: 1.5rem;
-    white-space: nowrap;
+#logo {
+    height: 60px;
+    margin-right: 15px;
 }
 
 nav ul {
     list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
 
 nav a {
     color: white;
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    justify-content: space-between;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.6;
 }
 
-/* Estilos del modo claro */
+/* Modo claro y oscuro */
 body.claro {
     background-color: #ffffff;
     color: #000000;
 }
 
-/* Estilos del modo oscuro */
 body.oscuro {
     background-color: #121212;
     color: #ffffff;
@@ -64,67 +63,65 @@ body.oscuro {
 
 /* Estilos del botón */
 button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    align-items: right;
+    cursor: pointer;
     transition: background-color 0.3s;
-    display: flex;
-}
-
-/* Cambios de color del botón en ambos modos */
-body.claro button {
-    background-color: #333;
-    color: #ffffff;
-}
-
-body.oscuro button {
-    background-color: #ffffff;
-    color: #333;
 }
 
 /* Secciones */
-.content-section {
-    padding: 30px
+/* Fondo para sección Nosotros */
+#nosotros {
+    background: url('background-nosotros.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-.content-section .content-img {
-    width: 40%;
-    max-height: 50px;
-    object-fit:cover;
-    object-position: 20px 50px;
+/* Estilo para contenedores principales y secundarios */
+#vision-mision .main-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.content-section .text {
-    width: 50%;
+#vision-mision .sub-container {
+    background: linear-gradient(to bottom, #d5f4fc, #b3eaf5);
+    border-radius: 10px;
+    width: 45%;
+    padding: 20px;
+    margin: 10px;
 }
 
-.background-img {
-    background: url('background.jpg') no-repeat center center/cover;
-    padding: 40px;
+#vision-mision .inner-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#servicios {
+    padding: 30px;
     text-align: center;
 }
 
-.img-left {
-    float: left;
-    margin-right: 20px;
+#servicios ul {
+    list-style: none;
+    padding: 0;
 }
 
-.img-right {
-    float: right;
-    margin-left: 20px;
+#servicios li {
+    margin: 10px 0;
 }
 
-.button {
-    background-color: #1bb1c5;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 35px;
+
+.button:hover {
+    background-color: #138fa5;
 }
 
 /* Pie de página */
@@ -132,14 +129,17 @@ footer {
     background-color: #00a2ad;
     color: white;
     text-align: center;
-    padding: 10px 20px;
-    margin: 15px; 
+    padding: 20px;
+    margin-top: 20px; 
 }
 
 .social-icons img {
     height: 30px;
-    width: 30px;
-    margin: 0 5px;
+    margin: 0 10px;
     margin-top: 25px; 
-    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }
