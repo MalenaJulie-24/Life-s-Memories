@@ -1,3 +1,9 @@
+ // Función que simula el registro del usuario
+        function registerUser() {
+            alert("¡Registro exitoso!");
+            // Redirige a la página de inicio
+            window.location.href = "index.html";
+        }
 // Selecciona el botón y el cuerpo del documento
 const botonModoOscuro = document.getElementById('modoOscuroBoton');
 const cuerpo = document.body;
