@@ -153,14 +153,12 @@ footer {
     background-color: #00a2ad;
     color: white;
     text-align: center;
-    padding: 10px 20px;
-    margin: 15px; 
+    padding: 20px; 
+    margin: 0; 
 }
 
 .social-icons img {
     height: 30px;
     width: 30px;
-    margin: 0 5px;
-    margin-top: 25px; 
-    gap: 20px;
+    margin: 0 10px;
 }
