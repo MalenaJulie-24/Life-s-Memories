@@ -8,17 +8,16 @@ header {
     justify-content: space-between;
 }
 
-#logo-link{
+#logo-link {
     display: flex;
     align-items: center;
     text-decoration: none; 
     color: white;
-    margin-right: 60px;
 }
 
 #logo {
-    height: 80px;
-    margin-right: 20px;
+    height: 60px;
+    margin-right: 15px;
 }
 
 h1 {
