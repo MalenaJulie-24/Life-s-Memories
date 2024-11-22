@@ -101,13 +101,6 @@ button {
     border-radius: 10px;
 }
   
-/* Secciones */
-.background-img {
-    background: url('background.jpg') no-repeat center center/cover;
-    padding: 40px;
-    text-align: center;
-}
-
 /* Botones */
 .button {
     background-color: #1bb1c5;
