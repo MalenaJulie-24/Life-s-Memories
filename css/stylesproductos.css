@@ -94,6 +94,18 @@ body.oscuro button {
     background: url('background.jpg') no-repeat center center/cover;
     padding: 40px;
     text-align: center;
+    color: white; /* Asegura legibilidad */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para resaltar el texto */
+}
+
+.background-img h2 {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.background-img p {
+    margin-top: 15px;
+    font-size: 1.2rem;
 }
   
 
