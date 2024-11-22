@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="styleslogin.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="contenedor">
         <h2>Registro de Usuario</h2>
-        <form> 
+        <form onsubmit="registerUser(); return false;"> 
             <label for="nombres">Nombres:</label><br><br>
             <input type="text" id="nombres" required><br><br>
             <label for="apellidos">Apellidos:</label><br><br>
@@ -25,8 +24,8 @@
                 <option value="femenino">Femenino</option>
             </select><<br><br>
             <button type="submit">Registrarse</button><br><br>
-            <button onclick="logout()">Cerrar Sesión</button><br>
         </form>           
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
